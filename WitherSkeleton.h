@@ -50,7 +50,7 @@ class WitherSkeleton {
     float swordFrame = 0;
     float swordRunningTime;
     float swordUpdateTime = 1.f / 12.f;
-    float swordMaxLifetime = 4.f;
+    float swordMaxLifetime = 3.5f;
     float swordLifetime = 0.f;
 
     bool attackAnimation = true;

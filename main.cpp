@@ -15,7 +15,7 @@ int factorial(int num) {
 int main() {
     float winWidth = 1200;
     float winHeight = 720;
-    const int platformsLen = 4;
+    const int platformsLen = 5;
     const int lavasSize = 1;
     const int witherSkeletonsSize = 3;
     const int stagesSize = 3;
@@ -24,9 +24,9 @@ int main() {
 
     float surviveTime = 0.f;
     Stage stages[] = {
-        {0, 0.f, 25.f},
-        {1, 25.f, 40.f},
-        {2, 40.f, 60.f},
+        {0, 0.f, 20.f},
+        {1, 20.f, 40.f},
+        {2, 40.f, 75.f},
     };
 
     Rectangle platforms[platformsLen] = {
@@ -34,6 +34,7 @@ int main() {
         {winWidth - 327, winHeight - 5, 152, 50},
         {310, winHeight - 5, 152, 50},
         {360.66f, 355, 101.333f, 50},
+        {870.f, 215, 400.333f, 50},
     };
 
     Rectangle lavas[lavasSize] = {
@@ -92,7 +93,7 @@ int main() {
             EndDrawing();
             continue;
         } else if (!orange.updateHealth(0)) {
-            orange.updateHealth(2);
+            orange.updateHealth(3);
             orange.restartPosition();
             surviveTime = 0.f;
             restartWait = 0.f;

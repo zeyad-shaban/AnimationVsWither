@@ -124,8 +124,8 @@ void Player::setStage(Stage stage) {
     } else if (stage.stageId == 1) {
         texture = LoadTexture("assets/images/second-coming.png");
         updateHealth(2);
-        speed += 50;
-        jumpPower += 100;
+        speed += 75;
+        jumpPower -= 150;
         canAttack = false;
     } else if (stage.stageId == 2) {
         texture = LoadTexture("assets/images/ultra-coming.png");
