@@ -46,7 +46,7 @@ class WitherSkeleton {
     bool swordSpawned = false;
     float swordCols = 8.f;
     float swordScale = 0.1f;
-    float swordSpeed = 2.f;
+    float swordSpeed = 3.5f;
     float swordFrame = 0;
     float swordRunningTime;
     float swordUpdateTime = 1.f / 12.f;
