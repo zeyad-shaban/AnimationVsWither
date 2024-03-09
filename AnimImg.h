@@ -1,3 +1,4 @@
+// added comment here
 #include "raylib.h"
 
 #ifndef ANIM_IMG_H
